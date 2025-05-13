@@ -41,11 +41,11 @@ function CustomLink(props) {
     return <a {...props} />
   }
 
-  return <a target="_blank" rel="noopener noreferrer" {...props} />
+  return <a target='_blank' rel='noopener noreferrer' {...props} />
 }
 
 function RoundedImage(props) {
-  return <Image alt={props.alt} className="rounded-lg" {...props} />
+  return <Image alt={props.alt} className='rounded-lg' {...props} />
 }
 
 function Code({ children, ...props }) {

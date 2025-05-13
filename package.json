@@ -3,7 +3,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "format": "prettier --write .",
+    "check-format": "prettier --check ."
   },
   "dependencies": {
     "@tailwindcss/postcss": "4.0.0-alpha.13",
@@ -18,8 +20,13 @@
     "postcss": "^8.4.35",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.56.3",
     "sugar-high": "^0.6.0",
     "tailwindcss": "4.0.0-alpha.13",
-    "typescript": "5.3.3"
+    "typescript": "5.3.3",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3"
   }
 }
