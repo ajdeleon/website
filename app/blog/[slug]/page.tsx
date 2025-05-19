@@ -14,7 +14,10 @@ export async function generateStaticParams() {
 export function generateMetadata({ params }) {
   let post = getBlogPosts().find((post) => post.slug === params.slug)
   if (!post) {
-    return
+    return {
+      title: 'Post not found',
+      description: 'This post was not found, please try a different slug',
+    }
   }
 
   let {

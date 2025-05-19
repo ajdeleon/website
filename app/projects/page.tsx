@@ -5,7 +5,10 @@ export const metadata = {
   description: 'Personal Projects',
 }
 
-const projects = [{ slug: '/midi', title: 'Midi Controller Editor' }]
+const projects = [
+  { slug: '/midi', title: 'Midi Controller Editor' },
+  { slug: '/guitar/chords', title: 'Guitar Chords' },
+]
 
 export default function Page() {
   return (
